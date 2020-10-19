@@ -10,24 +10,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resetLabel: UIButton!
     @IBOutlet weak var MainLabel: UILabel!
+    @IBOutlet weak var imagefly: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-         MainLabel.isHidden = true
-        
-        // Do any additional setup after loading the view.
+         isOff()
     }
 
     @IBAction func Show(_ sender: UIButton) {
-        
-        MainLabel.isHidden = false
-        
+        isOn()
+    }
+    
+    @IBAction func resetAll(_ sender: UIButton) {
+        isOff()
     }
     
     
+    
+    func isOn() {
+        MainLabel.isHidden = false
+        imagefly.isHidden = false
+        resetLabel.isHidden = false
+    }
 
+    func isOff() {
+        MainLabel.isHidden = true
+        imagefly.isHidden = true
+        resetLabel.isHidden = true
+    }
+    
 }
 
