@@ -50,7 +50,7 @@
                     </view>
                     <connections>
                         <outlet property="MainLabel" destination="ANO-gs-wsC" id="vGh-nV-Ret"/>
-                        <outlet property="imagefly" destination="nze-2U-H1T" id="0bm-4X-i0Y"/>
+                        <outlet property="imageView" destination="nze-2U-H1T" id="0bm-4X-i0Y"/>
                         <outlet property="resetLabel" destination="vfa-9K-QvQ" id="X10-cB-mT1"/>
                     </connections>
                 </viewController>
